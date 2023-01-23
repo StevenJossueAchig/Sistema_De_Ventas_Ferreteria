@@ -212,7 +212,7 @@ class HardwareStore:
         name = input("Ingrese el nombre del producto: ")
         stock = input("Ingrese la cantidad del producto: ")
         price = input("Ingrese el precio del producto: ")
-        expirationDate = input("Ingrese la fecha de caducidad del producto: ")
+        expirationDate = input("Ingrese la fecha de caducidad del producto (DD/MM/AA): ")
         description = input("Ingrese la descripcion del producto: ")
         #color blanco, pintuco, 2L
         #Enviamos al constructor de la clase producto los parametros propios de el, de cada elemento ingresado
