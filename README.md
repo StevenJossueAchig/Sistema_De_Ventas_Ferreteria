@@ -48,11 +48,7 @@ $ python pico_y_placa.py -p EBA-0234 -d 2021-04-27 -t 17:00
 The vehicle with plate EBA-0234 CANNOT be on the road on 2021-04-27 at 17:00.
 ```
 
-## Automated Testing
-
-To perform automated testing using the _unittest_ framework run: `python test.py`
-
 
 ## License
 
-Este proyecto está autorizado bajo la Licencia MIT; consulte el archivo de[Licencia](Licencia) para mas detalles.
+Este proyecto está autorizado bajo la Licencia MIT; consulte el archivo de [Licencia](Licencia) para mas detalles.
