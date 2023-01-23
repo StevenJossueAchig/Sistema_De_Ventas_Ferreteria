@@ -12,7 +12,7 @@ Se requieren las siguientes bibliotecas:
 
 * [PyInstaller](https://pyinstaller.org/en/stable/)
 
-If you wish to use the [abstract Public Holidays API](https://www.abstractapi.com/holidays-api), save the API key in the enviroment variable HOLIDAYS_API_KEY. Note that this API excludes the rules of [Reform Law to the LOSEP (in force since December 21, 2016 /R.O # 906)](https://biblioteca.defensoria.gob.ec/bitstream/37000/1683/1/LEY%20ORG%C3%81NICA%20REFORMATORIA%20A%20LA%20LEY%20ORG%C3%81NICA%20DEL%20SERVICIO%20P%C3%9ABLICO%20Y%20AL%20C%C3%93DIGO%20DEL%20TRABAJO.pdf) related to the Holidays in Ecuador. Nevertheless, the offline mode of the “Pico y Placa” predictor considers all rules of the law mentioned above.
+Si desea usar [@profile](https://pypi.org/project/memory-profiler/), ejecutar el programa desde una terminal, buscando el archivo .py y porterior ejeceutar el comando [python -m memory_profiler product.py](https://pypi.org/project/memory-profiler/), posterior haga uso del programa al momento de finalizar el programa automaticamente se capturara la complejidad de espacio de cada una de las funciones a las que se les ha agregado [@profile](https://pypi.org/project/memory-profiler/).
 
 ## Usage
 
