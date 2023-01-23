@@ -33,11 +33,11 @@ Arguments:
 
 **Fecha de caducidad:** La manera de ingresar la fecha será en el formato: **DD-MM-AA**. Examples: **24-04-2023**, **19-09-2023**
 
-**Precio:** the time must always be represented under the 24h system, that is, the number of hours that have elapsed since midnight. The 12h format is not allowed. Format: **HH:MM**, where **HH** and **MM** should be composed of two digits, respectively. Examples: **12:30, 21:10, 09:05, 00:00 (midnight).**
+**Precio:** El precio debe ser ingresado en un formato decimal para que el precio pueda ser correctamente agregado caso contrario no se lo permitirá Ejemplos: **12.30, 56.89, 12.00**
 
-**Cantidad:** the time must always be represented under the 24h system, that is, the number of hours that have elapsed since midnight. The 12h format is not allowed. Format: **HH:MM**, where **HH** and **MM** should be composed of two digits, respectively. Examples: **12:30, 21:10, 09:05, 00:00 (midnight).**
+**Cantidad:** La cantidad debe ser ingresada en el formato de un número entero, caso contrario no se lo permitirá Ejemplos: **25, 30, 100**
 
-**Descripción:** the time must always be represented under the 24h system, that is, the number of hours that have elapsed since midnight. The 12h format is not allowed. Format: **HH:MM**, where **HH** and **MM** should be composed of two digits, respectively. Examples: **12:30, 21:10, 09:05, 00:00 (midnight).**
+**Descripción:** En la descripción debe ser ingresada caracteristicas como marca, tamaño, color, entre otros aspectos relevantes para el ingreso del producto. Ejemplos: **Pintura negra Pintuco, Martillo de goma para valdosa, Destornillador punta estrella.**
 
 En caso de usar [@profile](https://pypi.org/project/memory-profiler/) agregar en cada función encima de donde se define, para poder ejecutar el comando python -m memory_profiler product.py, caso contrario no funcionará.
 
