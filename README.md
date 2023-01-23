@@ -14,22 +14,17 @@ Se requieren las siguientes bibliotecas:
 
 Si desea usar [@profile](https://pypi.org/project/memory-profiler/), ejecutar el programa desde una terminal, buscando el archivo .py y porterior ejeceutar el comando [python -m memory_profiler product.py](https://pypi.org/project/memory-profiler/), posterior haga uso del programa al momento de finalizar el programa automaticamente se capturara la complejidad de espacio de cada una de las funciones a las que se les ha agregado [@profile](https://pypi.org/project/memory-profiler/).
 
-## Usage
+## Uso
 
 ```
-usage: pico_y_placa.py [-h] [-o] -p PLATE -d DATE -t TIME
+usage: product.py [option] [datos]
 
-Pico y Placa Quito Predictor: Check if the vehicle with the provided plate can be on the road on the provided date and time
+Sistema de ventas Ferreteria: Manejo de un inventario y el proceso para ventas de una ferreteria.
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -o, --online          use abstract's Public Holidays API
-  -p PLATE, --plate PLATE
-                        the vehicle's plate: XXX-YYYY or XX-YYYY, where X is a capital letter and Y is a digit
-  -d DATE, --date DATE  the date to be checked: YYYY-MM-DD
-  -t TIME, --time TIME  the time to be checked: HH:MM
+Arguments:
+  -datos   datos de un producto.
 ```
-### Format of the input data
+### Formato de los datos de entrada
 
 **Plate:** following the [Ecuador car license plate format](https://es.wikipedia.org/wiki/Matr%C3%ADculas_automovil%C3%ADsticas_de_Ecuador), the parameter “Plate” should have this format: **XXX-YYYY**  (commercial, government, official, and private vehicles) or **XX-YYYY** (diplomatic service and temporary hospitalization vehicles), where **X** is a capital letter, and **Y** is a digit. Examples: **EBA-0234**, **CC-0012.**
 
