@@ -4,7 +4,7 @@ Sitema de ventas para una Ferreteria
 Sistema para el manejo de inventario y venta los precios y cantidad de cada producto son numeros decimales y enteros respectivamente, en el caso de los demas ademas datos son cadenas de caracteres, para el ingreso de texto, cada opción lleva a una funcionalidad diferente que solventa las necesidades de una ferreteria, como la venta de productos, agregación de productos, busqueda de un producto entre otros. El esquema de negocio ha sido tomado de https://www.100plandenegocios.com/plan-de-negocios-de-una-ferreteria#descripcion
 
 
-## Rquisitos
+## Requisitos
 
 Se requieren las siguientes bibliotecas:
 
@@ -18,6 +18,9 @@ Si desea usar [@profile](https://pypi.org/project/memory-profiler/), ejecutar el
 
 ```
 usage: product.py [option] [datos]
+
+C:\Users\legio\OneDrive\Escritorio\Sistema_De_Ventas_Ferretieria\code>
+C:\Users\legio\OneDrive\Escritorio\Sistema_De_Ventas_Ferretieria\code>python -m memory_profiler product.py
 
 Sistema de ventas Ferreteria: Manejo de un inventario y el proceso para ventas de una ferreteria.
 
