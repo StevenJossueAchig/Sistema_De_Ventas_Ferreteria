@@ -27,6 +27,7 @@ Sistema de ventas Ferreteria: Manejo de un inventario y el proceso para ventas d
 Arguments:
   -datos   datos de un producto.
 ```
+
 ### Formato de los datos de entrada
 
 **Nombre:** El nombre del producto solo debe hacer referencia al producto, no más especificaciones eso se ingresará en la descripción del producto.
@@ -58,6 +59,9 @@ En caso de usar [@profile](https://pypi.org/project/memory-profiler/) agregar en
         print("Ganancias totales: $"+str(round(self.earns,2))+"\n")
 ```
 
+```
+Pintura,40,23.89,25/03/2023,Puntura color blanco marca Pintuco
+```
 
 ## Licencia
 
