@@ -430,11 +430,17 @@ class Utils:
         a = agregación al final del archivo
         r+ = leer y escribir
         """
+        #tomamos la direccion de donde se ejecuta el programa
         cwd = os.getcwd()
+        #conformamos el nombre del archivo con la direccion que hemos sacado antes
         filename = cwd + "\\" + filename
+        #abrimos el archivo donde enviamos el nombre del archivo para saber que archivo abrir
         file = open(filename,"a")
+        #imprimimos la direccion del archivo que hemos abierto
         print(filename)
+        #escribimos la linea que hemos enviado como parametro en el archivo
         file.write(line)
+        #finalmente cerramos el archivo
         file.close()
 
     def loadObjectsFromFile(filename):
@@ -445,11 +451,17 @@ class Utils:
         Retorna:
             lines = lineas con el texto del documento
         """
+        #tomamos la direccion de donde se ejecuta el programa
         cwd = os.getcwd()
+        #conformamos el nombre del archivo con la direccion que hemos sacado antes
         filename = cwd +"\\"+ filename
+        #abrimos el archivo donde enviamos el nombre del archivo para saber que archivo abrir
         file = open(filename,"r")
+        #y almacenamos las lineas en que se leen del archivo en una variable lineas
         lines = file.readlines()
+        #cerramos el archivo
         file.close()
+        #retronamos todo lo que se cargo y se leyo
         return lines
 
 def calculateComplexityTime():
