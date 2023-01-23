@@ -1,8 +1,7 @@
 # Sistema De Ventas Para Una Ferretieria
 Sitema de ventas para una Ferreteria
 
-A "Pico y Placa" predictor. The inputs are a license plate number (the full number, not the last digit), a date (as a string), and a time (as a string). The program returns whether or not that car can be on the road on the specified date and time.
-This predictor is developed according to the regulations of [the Municipal Ordinance of Quito No. 0305](http://www7.quito.gob.ec/mdmq_ordenanzas/Ordenanzas/ORDENANZAS%20A%C3%91OS%20ANTERIORES/ORDM-305-%20%20CIRCULACION%20VEHICULAR%20PICO%20Y%20PLACA.pdf).
+Sistema para el manejo de inventario y venta los precios y cantidad de cada producto son numeros decimales y enteros respectivamente, en el caso de los demas ademas datos son cadenas de caracteres, para el ingreso de texto, cada opción lleva a una funcionalidad diferente que solventa las necesidades de una ferreteria, como la venta de productos, agregación de productos, busqueda de un producto entre otros. El esquema de negocio ha sido tomado de (https://www.100plandenegocios.com/plan-de-negocios-de-una-ferreteria#descripcion)
 
 
 ## Requirements
