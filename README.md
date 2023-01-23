@@ -29,16 +29,20 @@ Arguments:
 ```
 ### Formato de los datos de entrada
 
-**Plate:** following the [Ecuador car license plate format](https://es.wikipedia.org/wiki/Matr%C3%ADculas_automovil%C3%ADsticas_de_Ecuador), the parameter “Plate” should have this format: **XXX-YYYY**  (commercial, government, official, and private vehicles) or **XX-YYYY** (diplomatic service and temporary hospitalization vehicles), where **X** is a capital letter, and **Y** is a digit. Examples: **EBA-0234**, **CC-0012.**
+**Nombre:** El nombre del producto solo debe hacer referencia al producto, no más especificaciones eso se ingresará en la descripción del producto.
 
-**Date:** considering the [ISO 8601](https://es.wikipedia.org/wiki/ISO_8601), the parameter “Date” should have the following format: **YYYY-MM-DD**. Examples: **2021-04-24**, **2020-09-10.**
+**Fecha de caducidad:** La manera de ingresar la fecha será en el formato: **DD-MM-AA**. Examples: **24-04-2023**, **19-09-2023**
 
-**Time:** the time must always be represented under the 24h system, that is, the number of hours that have elapsed since midnight. The 12h format is not allowed. Format: **HH:MM**, where **HH** and **MM** should be composed of two digits, respectively. Examples: **12:30, 21:10, 09:05, 00:00 (midnight).**
+**Precio:** the time must always be represented under the 24h system, that is, the number of hours that have elapsed since midnight. The 12h format is not allowed. Format: **HH:MM**, where **HH** and **MM** should be composed of two digits, respectively. Examples: **12:30, 21:10, 09:05, 00:00 (midnight).**
 
-To use the [abstract Public Holidays API](https://www.abstractapi.com/holidays-api) add the flag -o or --online. Otherwise, the predicator will use the class “HolidayEcuador” to check if a date is a holiday or not.
+**Cantidad:** the time must always be represented under the 24h system, that is, the number of hours that have elapsed since midnight. The 12h format is not allowed. Format: **HH:MM**, where **HH** and **MM** should be composed of two digits, respectively. Examples: **12:30, 21:10, 09:05, 00:00 (midnight).**
+
+**Descripción:** the time must always be represented under the 24h system, that is, the number of hours that have elapsed since midnight. The 12h format is not allowed. Format: **HH:MM**, where **HH** and **MM** should be composed of two digits, respectively. Examples: **12:30, 21:10, 09:05, 00:00 (midnight).**
+
+En caso de usar [@profile](https://pypi.org/project/memory-profiler/) agregar en cada función encima de donde se define, para poder ejecutar el comando python -m memory_profiler product.py, caso contrario no funcionará.
 
 
-## Example
+## Ejemplo
 
 ```
 $ python pico_y_placa.py -p EBA-0234 -d 2021-04-23 -t 15:15
@@ -49,6 +53,6 @@ The vehicle with plate EBA-0234 CANNOT be on the road on 2021-04-27 at 17:00.
 ```
 
 
-## License
+## Licencia
 
 Este proyecto está autorizado bajo la Licencia MIT; consulte el archivo de [Licencia](Licencia) para mas detalles.
