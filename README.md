@@ -55,4 +55,4 @@ To perform automated testing using the _unittest_ framework run: `python test.py
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+Este proyecto está autorizado bajo la Licencia MIT; consulte el archivo de[LICENSE](LICENSE) file for details
