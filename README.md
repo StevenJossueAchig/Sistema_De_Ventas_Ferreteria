@@ -27,17 +27,18 @@ Sistema de ventas Ferreteria: Manejo de un inventario y el proceso para ventas d
 Arguments:
   -datos   datos de un producto.
 ```
+
 ### Formato de los datos de entrada
 
 **Nombre:** El nombre del producto solo debe hacer referencia al producto, no más especificaciones eso se ingresará en la descripción del producto.
 
 **Fecha de caducidad:** La manera de ingresar la fecha será en el formato: **DD-MM-AA**. Examples: **24-04-2023**, **19-09-2023**
 
-**Precio:** the time must always be represented under the 24h system, that is, the number of hours that have elapsed since midnight. The 12h format is not allowed. Format: **HH:MM**, where **HH** and **MM** should be composed of two digits, respectively. Examples: **12:30, 21:10, 09:05, 00:00 (midnight).**
+**Precio:** El precio debe ser ingresado en un formato decimal para que el precio pueda ser correctamente agregado caso contrario no se lo permitirá Ejemplos: **12.30, 56.89, 12.00**
 
-**Cantidad:** the time must always be represented under the 24h system, that is, the number of hours that have elapsed since midnight. The 12h format is not allowed. Format: **HH:MM**, where **HH** and **MM** should be composed of two digits, respectively. Examples: **12:30, 21:10, 09:05, 00:00 (midnight).**
+**Cantidad:** La cantidad debe ser ingresada en el formato de un número entero, caso contrario no se lo permitirá Ejemplos: **25, 30, 100**
 
-**Descripción:** the time must always be represented under the 24h system, that is, the number of hours that have elapsed since midnight. The 12h format is not allowed. Format: **HH:MM**, where **HH** and **MM** should be composed of two digits, respectively. Examples: **12:30, 21:10, 09:05, 00:00 (midnight).**
+**Descripción:** En la descripción debe ser ingresada caracteristicas como marca, tamaño, color, entre otros aspectos relevantes para el ingreso del producto. Ejemplos: **Pintura negra Pintuco, Martillo de goma para valdosa, Destornillador punta estrella.**
 
 En caso de usar [@profile](https://pypi.org/project/memory-profiler/) agregar en cada función encima de donde se define, para poder ejecutar el comando python -m memory_profiler product.py, caso contrario no funcionará.
 
@@ -45,13 +46,22 @@ En caso de usar [@profile](https://pypi.org/project/memory-profiler/) agregar en
 ## Ejemplo
 
 ```
-$ python pico_y_placa.py -p EBA-0234 -d 2021-04-23 -t 15:15
-The vehicle with plate EBA-0234 CAN be on the road on 2021-04-23 at 15:15.
-
-$ python pico_y_placa.py -p EBA-0234 -d 2021-04-27 -t 17:00
-The vehicle with plate EBA-0234 CANNOT be on the road on 2021-04-27 at 17:00.
+@profile
+    def listEarns(self):
+        """
+        Funcion para listar las ganancias
+        Recibe:
+            self = clase producto, un objeto
+        Retorna:
+            no retorna
+        """
+        #se imprime las ganancias totales y se redondea las ganancias a dos decimales
+        print("Ganancias totales: $"+str(round(self.earns,2))+"\n")
 ```
 
+```
+Pintura,40,23.89,25/03/2023,Puntura color blanco marca Pintuco
+```
 
 ## Licencia
 
