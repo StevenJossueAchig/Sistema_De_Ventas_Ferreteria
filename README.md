@@ -45,11 +45,17 @@ En caso de usar [@profile](https://pypi.org/project/memory-profiler/) agregar en
 ## Ejemplo
 
 ```
-$ python pico_y_placa.py -p EBA-0234 -d 2021-04-23 -t 15:15
-The vehicle with plate EBA-0234 CAN be on the road on 2021-04-23 at 15:15.
-
-$ python pico_y_placa.py -p EBA-0234 -d 2021-04-27 -t 17:00
-The vehicle with plate EBA-0234 CANNOT be on the road on 2021-04-27 at 17:00.
+@profile
+    def listEarns(self):
+        """
+        Funcion para listar las ganancias
+        Recibe:
+            self = clase producto, un objeto
+        Retorna:
+            no retorna
+        """
+        #se imprime las ganancias totales y se redondea las ganancias a dos decimales
+        print("Ganancias totales: $"+str(round(self.earns,2))+"\n")
 ```
 
 
